@@ -1,0 +1,19 @@
+title: Creating a Song Recommendation Engine with Azure (and Spotify API)
+description: >-
+  This learning lab course is part of Bit Project's 8 Week Program. By the end
+  of the course, students will deploy a song recommendation web app using Azure
+  Static Web Apps.
+template:
+  repo: creating-a-song-recommendation-engine-with-azure-(and-spotify-api)-template
+  name: creating-a-song-recommendation-engine-with-azure-(and-spotify-api)
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
