@@ -1,19 +1,144 @@
-title: Creating a Song Recommendation Engine with Azure (and Spotify API)
-description: >-
-  This learning lab course is part of Bit Project's 8 Week Program. By the end
-  of the course, students will deploy a song recommendation web app using Azure
-  Static Web Apps.
+title: 'Creating a Song Recommendation Engine with Azure (and Spotify API)'
+description: This learning lab course is part of Bit Project's 8 Week Program. By the end of the course, students will deploy a song recommendation web app using Azure Static Web Apps.
 template:
-  repo: creating-a-song-recommendation-engine-with-azure-(and-spotify-api)-template
-  name: creating-a-song-recommendation-engine-with-azure-(and-spotify-api)
+  name: bit-camp-learning-lab
+  repo: azure-functions-template
 before:
-  - type: createIssue
-    title: Welcome!
-    body: new-issue.md
+  - type: createPullRequest
+    head: bitcamp
+    title: 'Creating a Song Recommendation Engine with Azure (and Spotify API)'
+    body: prerequisite.md
+  - type: updateBranchProtection
 steps:
-  - title: First step
-    description: The first step in your course
-    event: issues.assigned
-    link: '{{ repoUrl }}'
+  - title: 'Week 1: Downloading an IDE'
+    description: Installing Visual Studio Code.
+    event: issue_comment.created
+    link: '{{ repoUrl }}/pull/1'
     actions:
-      - type: closeIssue
+      - type: respond
+        with: ide.md
+  - title: 'Week 1: Configuring Azure Functions'
+    description: Creating a Azure account and a basic function.
+    event: issue_comment.created
+    link: '{{ repoUrl }}/pull/1'
+    actions:
+      - type: respond
+        with: azure.md
+  - title: 'Week 1: Learning to Use Github'
+    description: Understanding how to use GitHub.
+    event: issue_comment.created
+    link: '{{ repoUrl }}/pull/1'
+    actions:
+      - type: respond
+        with: github.md
+  - title: 'Week 2: Parsing Multipart Data'
+    description: Parsing an image for Face API.
+    event: issue_comment.created
+    link: '{{ repoUrl }}/pull/1'
+    actions:
+      - type: respond
+        with: parsing.md
+  - title: 'Week 2: Creating a Face API Endpoint'
+    description: Connecting Face API components.
+    event: issue_comment.created
+    link: '{{ repoUrl }}/pull/1'
+    actions:
+      - type: respond
+        with: endpoint.md
+  - title: 'Week 2: Calling Face API (Parameters)'
+    description: Using Face API to analyze image.
+    event: issue_comment.created
+    link: '{{ repoUrl }}/pull/1'
+    actions:
+      - type: respond
+        with: params.md
+  - title: 'Week 2: Calling Face API (Fetch)'
+    description: Retrieving Face API analytics.
+    event: issue_comment.created
+    link: '{{ repoUrl }}/pull/1'
+    actions:
+      - type: respond
+        with: fetch.md
+  - title: 'Week 2: Installing Dependencies'
+    description: Using NPM to install necessities.
+    event: issue_comment.created
+    link: '{{ repoUrl }}/pull/1'
+    actions:
+      - type: respond
+        with: dependencies.md
+  - title: 'Week 3: Creating an HTML Page'
+    description: Creating a frontend for our web app.
+    event: issue_comment.created
+    link: '{{ repoUrl }}/pull/1'
+    actions:
+      - type: respond
+        with: html.md
+  - title: 'Week 3: Displaying Emotion Data'
+    description: Using JQuery to change HTML.
+    event: issue_comment.created
+    link: '{{ repoUrl }}/pull/1'
+    actions:
+      - type: respond
+        with: data.md
+  - title: 'Week 4: Creating a Web App'
+    description: Deploying our song recommendation engine.
+    event: issue_comment.created
+    link: '{{ repoUrl }}/pull/1'
+    actions:
+      - type: respond
+        with: app.md
+  - title: 'Week 4: Making an API Controller'
+    description: Starting integration with Spotify API.
+    event: issue_comment.created
+    link: '{{ repoUrl }}/pull/1'
+    actions:
+      - type: respond
+        with: apicontroller.md
+  - title: 'Week 4: Recommendation Parameters'
+    description: Creating parameters for retrieving song.
+    event: issue_comment.created
+    link: '{{ repoUrl }}/pull/1'
+    actions:
+      - type: respond
+        with: recparams.md
+  - title: 'Week 4: Recommendation Call (GET)'
+    description: Using GET method to call.
+    event: issue_comment.created
+    link: '{{ repoUrl }}/pull/1'
+    actions:
+      - type: respond
+        with: reccall.md
+  - title: 'Week 4: Return Method (API Controller)'
+    description: Returning Spotify API recommendations.
+    event: issue_comment.created
+    link: '{{ repoUrl }}/pull/1'
+    actions:
+      - type: respond
+        with: return.md
+  - title: 'Week 4: UI Controller'
+    description: Connecting recommendations to UI.
+    event: issue_comment.created
+    link: '{{ repoUrl }}/pull/1'
+    actions:
+      - type: respond
+        with: uicontroller.md
+  - title: 'Week 4: App Controller'
+    description: Using JQuery to embed in app.
+    event: issue_comment.created
+    link: '{{ repoUrl }}/pull/1'
+    actions:
+      - type: respond
+        with: appcontroller.md
+  - title: 'Week 4: Event Listener (Final Step)'
+    description: Setup event listeners to finish web app.
+    event: issue_comment.created
+    link: '{{ repoUrl }}/pull/1'
+    actions:
+      - type: respond
+        with: eventlistener.md
+tags:
+  - Azure
+  - Azure Functions
+  - Spotify API
+  - Bit Project
+  - JavaScript
